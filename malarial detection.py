@@ -13,7 +13,7 @@ from keras.layers import Conv2D,MaxPooling2D,Dense,Flatten,Dropout
 data = []
 labels = []
 
-Parasitized=os.listdir("cell_images/cell_images/Parasitized/")
+Parasitized=os.listdir("cell_images/cell_images/Parasitized/") #path of the folder in which there are malaria cells
 
 for a in os.listdir("cell_images/cell_images/Parasitized/"):
     try:
@@ -27,7 +27,7 @@ for a in os.listdir("cell_images/cell_images/Parasitized/"):
         print("")
         
 
-uninfected = os.listdir("cell_images/cell_images/Parasitized/")
+uninfected = os.listdir("cell_images/cell_images/uninfect/") # paht of the folder in which there are no malarial cells or normal cells
 
 for a in os.listdir("cell_images/cell_images/Parasitized/"):
     try:
